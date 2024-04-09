@@ -1,0 +1,241 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+body {
+  width: auto;
+  height: auto;
+  background-color: #1f1f1f;
+  margin: 0; /* Reset default margin */
+  font-family: 'Clash Display', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 50%; 
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.2); /* Adjust transparency */
+  -webkit-backdrop-filter: blur(10px); /* Increase blur for a frosted effect */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Adjust border color and transparency */
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add shadow for depth */
+}
+
+.scroll-nav {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: yellow;
+  font-size: 17px;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+#home {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+}
+
+.desc {
+  position: relative;
+  margin-left: 8%;
+}
+
+.image {
+  position: relative;
+}
+
+.name {
+  font-size: 60px;
+  color: white;
+}
+
+span {
+  font-size: 40px;
+  color: yellow;
+}
+
+.descc {
+  position: relative;
+  margin-top: 4%;
+  font-size: 22px;
+  color: white;
+  margin-right: 30px;
+}
+
+.profile-pic {
+  border-radius: 40px;
+  margin-left: 12%;
+  width: 380px;
+  height: 450px;
+} 
+
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.titles {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: yellow;
+  font-size: 50px;
+}
+
+.personalinfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.leftsec {
+  margin-left: 20%;
+  margin-right: 20px;
+}
+
+
+
+.listing {
+  display: grid;
+ grid-template-columns: 300px 300px;
+  gap: 30px; /* Adjusted gap */
+}
+
+.delivery, .shopbag, .support, .returns {
+  margin-right: 50px;
+  padding-top: 10px;
+  background-color: #1f1f1f;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  color: yellow;
+}
+
+.deltop {
+  padding: 50px;
+  font-size: 20px;
+}
+
+.smallicons {
+  height: 40px;
+}
+
+.descrip{
+  color: yellow;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 80%;
+    height: 40px;
+    top: 2%;
+  }
+
+  .scroll-nav {
+    padding-left: 10px; /* Adjusted padding for smaller screens */
+    padding-right: 10px; /* Adjusted padding for smaller screens */
+  }
+
+  a {
+    font-size: 13px;
+  }
+
+  #home {
+    margin-left: 25px;
+    margin-top: 15%;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 25%;
+  }
+
+  .desc {
+    margin-left: 5%;
+  }
+
+  .name {
+    margin-top: 20%;
+    font-size: 23px;
+  }
+
+  span {
+    margin-top: -10%;
+    font-size: 20px;
+  }
+
+  .descc {
+    margin-top: 20px;
+    font-size: 8px;
+  }
+
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftsec {
+    margin-left: 10%;
+    margin-right: 20px;
+  }
+
+  .rightsec{
+    padding-right: 10%;
+  }
+
+  .titles {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .personalinfo {
+    margin-top: 20px;
+  }
+
+  .listing {
+    margin-top: 5%;
+    margin-left: 10%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .delivery, .shopbag, .support, .returns {
+    padding: 0px;
+  }
+
+  .smallicons {
+    height: 30px;
+  }
+
+  .descrip {
+    font-size: 13px;
+  }
+
+  .deltop {
+    padding: 20px;
+    font-size: 20px;
+  }
+  
+}
