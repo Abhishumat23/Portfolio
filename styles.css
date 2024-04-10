@@ -1,35 +1,31 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
-
 body {
-  width: auto;
-  height: auto;
   background-color: #1f1f1f;
-  margin: 0; /* Reset default margin */
+  margin: 0;
   font-family: 'Clash Display', sans-serif;
 }
 
 .navbar {
   position: fixed;
-  width: 50%; 
+  width: 50%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.2); /* Adjust transparency */
-  -webkit-backdrop-filter: blur(10px); /* Increase blur for a frosted effect */
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Adjust border color and transparency */
+  border: 1px solid rgba(255, 255, 255, 0.1);
   top: 3%;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .scroll-nav {
   display: flex;
   flex-direction: row;
-  text-decoration: none;
   justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
@@ -86,7 +82,7 @@ span {
   height: 450px;
 } 
 
-#about-me{
+#about-me {
   margin-top: 5%;
   display: flex;
   flex-direction: row;
@@ -101,7 +97,7 @@ span {
   justify-content: space-between;
 }
 
-#projects{
+#projects {
   margin-top: 5%;
   display: flex;
   flex-direction: row;
@@ -131,12 +127,10 @@ span {
   margin-right: 20px;
 }
 
-
-
 .listing {
   display: grid;
- grid-template-columns: 300px 300px;
-  gap: 30px; /* Adjusted gap */
+  grid-template-columns: 300px 300px;
+  gap: 30px;
 }
 
 .delivery, .shopbag, .support, .returns {
@@ -158,39 +152,44 @@ span {
   height: 40px;
 }
 
-.descrip{
+.descrip {
   color: yellow;
 }
 
+.resume {
+  cursor: pointer;
+}
 
-.resume-button{
+.resume-button {
   background-color: yellow;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 5px;
-    border-color:  black;
-    border-style: solid;
-    border-width: 1px;
-    height: 46px;
-    width: 95px;
-    cursor: pointer;
-    margin-left: 15px;
-    transition: background-color 0.3s, color 0.3s;
-    vertical-align: top;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 5px;
+  border-color:  black;
+  border-style: solid;
+  border-width: 1px;
+  height: 56px;
+  width: 155px;
+  transition: background-color 0.3s, color 0.3s;
+  vertical-align: top;
+  font-weight: bold;
+  margin-top: 20%;
+  margin-left: 52%;
 }
 
-.resume-button:hover{
+.resume-button:hover {
   background-color: rgb(0, 0, 0);
-  color: white;
+  color: yellow;
+  cursor: pointer;
 }
 
-.resume-button:active{
+.resume-button:active {
+  cursor: pointer;
   opacity: 0.6;
 }
 
-#projimg{
+#projimg {
   margin-left: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -198,13 +197,13 @@ span {
   align-items: center;
 }
 
-.img1{
+.img1 {
   border-radius: 20px;
   width: 420px;
   height: 300px;
 }
 
-.titl{
+.titl {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -212,8 +211,9 @@ span {
   font-size: 60px;
 }
 
-
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -290,39 +290,65 @@ span {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-svg{
+svg {
   margin-top: 1%;
   width: 5%;
   height: 20%;
 }
 
-.one{
+.one {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.numbe,.ema{
-  margin-left: 6%;
-  font-size: 30px;
-  color: yellow;
+hr {
+  border-color: yellow;
+  width: 90%;
 }
 
-hr{
+.numbe, .ema {
+  margin-left: 6%;
+  font-size: 30px;
+  color: white;
+}
+
+hr {
   background-color: yellow;
 }
+
+
+
+.mail{
+  margin-left: 33%;
+  margin-top: 5%;
+  padding-bottom: 100px;
+}
+
+.mail,.linkedin,.github:hover{
+  cursor: pointer;
+}
+
+.linkedin,.github{
+  margin-top: 5%;
+  margin-left: 10%;
+  padding-bottom: 100px;
+}
+
+
 
 
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -333,8 +359,8 @@ hr{
   }
 
   .scroll-nav {
-    padding-left: 10px; /* Adjusted padding for smaller screens */
-    padding-right: 10px; /* Adjusted padding for smaller screens */
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   a {
@@ -350,10 +376,11 @@ hr{
     width: 180px;
     height: auto;
     margin-left: 5%;
-    margin-top: 25%;
+    margin-top: 45%;
   }
 
   .desc {
+    margin-top: 10%;
     margin-left: 5%;
   }
 
@@ -380,13 +407,15 @@ hr{
   .leftsec {
     margin-left: 10%;
     margin-right: 20px;
+    font-size: 12px;
   }
 
-  .rightsec{
-    padding-right: 10%;
+  .rightsec {
+    padding-right: auto;
+    font-size: 10px;
   }
 
-  .titles {
+  #home,#about-me,#projects,#contact{
     margin-top: 20px;
     font-size: 30px;
   }
@@ -405,6 +434,7 @@ hr{
   .delivery, .shopbag, .support, .returns {
     padding: 0px;
   }
+  
 
   .smallicons {
     height: 30px;
@@ -417,6 +447,26 @@ hr{
   .deltop {
     padding: 20px;
     font-size: 8px;
+  }  
+
+  .resume{
+    margin-left: 10%;
   }
-  
+  .exp{
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+
+  .numbe, .ema{
+    font-size: 10px;
+  }
+
+  .titl{
+    font-size: 40px;
+  }
+
+  .resume-button{
+    width: 150px;
+    height: 40px;
+  }
 }
