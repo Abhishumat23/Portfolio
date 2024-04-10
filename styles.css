@@ -144,6 +144,57 @@ span {
   color: yellow;
 }
 
+
+.resume-button{
+  background-color: yellow;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+    border-color:  black;
+    border-style: solid;
+    border-width: 1px;
+    height: 46px;
+    width: 95px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.resume-button:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.resume-button:active{
+  opacity: 0.6;
+}
+
+#projimg{
+  margin-left: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1{
+  border-radius: 20px;
+  width: 420px;
+  height: 300px;
+}
+
+.titl{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: yellow;
+  font-size: 60px;
+}
+
+
 @media screen and (max-width: 768px) {
   .navbar {
     width: 80%;
@@ -235,7 +286,7 @@ span {
 
   .deltop {
     padding: 20px;
-    font-size: 20px;
+    font-size: 8px;
   }
   
 }
